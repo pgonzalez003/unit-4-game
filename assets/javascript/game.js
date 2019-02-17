@@ -24,9 +24,45 @@ function startGame(){
 $("#start").on("click", startGame);
 
 $(".btn-primary").on("click", function(){
-    var gameAction = ($("#.btn-primary").attr(characters));
-    gameAction = parseInt(gameAction);
-    counter += gameAction;
-    console.log(gameAction);
+    if (this.id == "davidButton"){
+    	console.log("davidButton pressed");
+    	counter += characters.davidButton;
+    	console.log(counter);
+        
+    }
+    else if (this.id == "xenomorphButton"){
+    	console.log("xenomorphButton pressed");
+    	counter += characters.xenomorphButton;
+    	console.log(counter);
+        
+    }
+    else if (this.id == "predatorsButton"){
+    	console.log("predatorsButton pressed");
+    	counter += characters.predatorsButton;
+        console.log(counter);
+        
+    }
+    else
+    {
+    	console.log("engineerButton pressed");
+    	counter += characters.engineerButton;
+        console.log(counter);
+        
+    }
+
+    alert(counter)
+
+    if (counter == targetNumber){
+        alert("LIFT OFF!!!");
+    }
+    else if (counter <= targetNumber){
+        alert(counter + "  fuel cells collected!");
+    }
+    else { 
+        counter >= targetNumber 
+        alert("Food for the facehuggers");
+        counter = 0, startGame();
+    }
     
+
 })
