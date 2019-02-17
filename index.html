@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Escape the Hive</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+        integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid" id=jumbotron>
+        <div class="container">
+            <h1 class="display-4">Fuel Target: <span id="meter"></span></h1>
+            <p class="lead">You desperately need to get out of the Hive. Your only chance is to collect fuel from your
+                foes. This is your only chance to escape the Hive!</p>
+            <hr class="my-4">
+            <button type="button" class="btn btn-danger" id="start">Start</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/david-8.jpg" class="card-img-top" alt="david-8">
+                    <div class="card-body">
+                        <h5 class="card-title">David-8</h5>
+                        <p class="card-text"></p>
+                        <a href="#david-8" class="btn btn-primary" id="davidButton" data-value="getRndInteger">
+                            <i class="fas fa-atom fa-spin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/xenomorphs-good.png" class="card-img-top" alt="xenomorphs">
+                    <div class="card-body">
+                        <h5 class="card-title">Xenomorphs</h5>
+                        <p class="card-text"></p>
+                        <a href="#xenomorphs" class="btn btn-primary" id="xenomorphButton">
+                            <i class="fas fa-atom fa-spin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/predators-good.jpg" class="card-img-top" alt="predators">
+                    <div class="card-body">
+                        <h5 class="card-title">Predators</h5>
+                        <p class="card-text"></p>
+                        <a href="#predators" class="btn btn-primary" id="predatorsButton">
+                            <i class="fas fa-atom fa-spin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/prometheus-engineer-main.jpg" class="card-img-top" alt="Engineers">
+                    <div class="card-body">
+                        <h5 class="card-title">Engineer</h5>
+                        <p class="card-text"></p>
+                        <a href="#engineer" class="btn btn-primary" id="engineerButton">
+                            <i class="fas fa-atom fa-spin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="villains">
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
