@@ -1,9 +1,16 @@
 body {
     background: url("../images/queen_hive.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 125%;
     font-family: 'Press Start 2P', cursive;
     color: red;
+}
+
+.lead {
+    font-size: 14pt;
+    letter-spacing: 2px;
+    line-height: 1.5;
+
 }
 
 #jumbotron {
@@ -29,4 +36,13 @@ img {
 #start { 
     text-align: center;
     
+}
+footer {
+    background: url("../images/queen_hive.png");
+    height: 45%;
+    padding-top: 15px;
+}
+#fuelCells {
+    font-size: 18pt;
+    text-align: center;
 }
